@@ -3,6 +3,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
+const copyrightYear = document.querySelector('.year');
 const navItems = document.querySelectorAll('.nav-item');
 
 //Set initial state of Menu
@@ -31,3 +32,6 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+var d = new Date();
+copyrightYear.innerHTML = d.getFullYear();
